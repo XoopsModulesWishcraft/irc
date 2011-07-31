@@ -1,0 +1,23 @@
+<div class='borderwrap' align='center'>
+    <div class='maintitle'><{$xoopsConfig.sitename}></div>
+    <div class='row1' align='center'>
+    <applet code='IRCApplet.class' codebase='./javairc' archive='irc.jar,pixx.jar' width='<{$xoConfig.width}>' height='<{$xoConfig.height}>'>
+      <param name='CABINETS' value='irc.cab,securedirc.cab,pixx.cab' />
+      <param name='nick' value='<{$nick}>' />
+      <param name='alternatenick' value='<{$nick}>???' />
+      <param name='fullname' value='<{$fullname}>' />
+      <param name='host' value='<{$xoConfig.server}>' />
+      <param name='gui' value='pixx' />
+      <param name='quitmessage' value='<{$xoopsConfig.sitename}> - <{$xoops_url}> - <{$xoConfig.quitmsg}>' />
+      <param name='asl' value='true' />
+      <param name='command1' value='/join <{$xoConfig.channel1}>' />
+      <param name='command2' value='/join <{$xoConfig.channel2}>' />
+      <param name='style:bitmapsmileys' value='<{if $xoConfig.usesmilies}>true<{else}>false<{/if}>' />
+      <param name='style:floatingasl' value='true' />
+      <param name='pixx:highlight' value='true' />
+      <param name='pixx:highlightnick' value='true' />
+      <param name='pixx:nickfield' value='true' />
+      <param name='style:smiley1' value='~:) images/smilies/sleep.gif' />
+    </applet>
+    </div>
+</div>
