@@ -4,9 +4,9 @@ switch ($GLOBALS['xoopsModuleConfig']['applet']) {
 case 'flash':
 	$xoopsOption['template_main'] = 'irc_flash_chat.html';
 	include (XOOPS_ROOT_PATH."/header.php");
-	$GLOBALS['xoTheme']->addScript(XOOPS_URL.'/modules/ircmod/lightIRC/swfobject.js', array('type'=>'text/javascript'));
-	$GLOBALS['xoTheme']->addScript(XOOPS_URL.'/modules/ircmod/config.php', array('type'=>'text/javascript'));
-	$GLOBALS['xoTheme']->addScript('', array('type'=>'text/javascript'), 'swfobject.embedSWF("'.XOOPS_URL.'/modules/ircmod/lightIRC/lightIRC.swf", "lightIRC", "'.$GLOBALS['xoopsModuleConfig']['width'].'", "'.$GLOBALS['xoopsModuleConfig']['height'].'", "10.0.0", "'.XOOPS_URL.'/modules/ircmod/lightIRC/expressInstall.swf", params);');
+	$GLOBALS['xoTheme']->addScript(XOOPS_URL.'/modules/'.$GLOBALS['xoopsModule']->getVar('dirname').'/lightIRC/swfobject.js', array('type'=>'text/javascript'));
+	$GLOBALS['xoTheme']->addScript(XOOPS_URL.'/modules/'.$GLOBALS['xoopsModule']->getVar('dirname').'/config.php', array('type'=>'text/javascript'));
+	$GLOBALS['xoTheme']->addScript('', array('type'=>'text/javascript'), 'swfobject.embedSWF("'.XOOPS_URL.'/modules/'.$GLOBALS['xoopsModule']->getVar('dirname').'/lightIRC/lightIRC.swf", "lightIRC", "'.$GLOBALS['xoopsModuleConfig']['width'].'", "'.$GLOBALS['xoopsModuleConfig']['height'].'", "10.0.0", "'.XOOPS_URL.'/modules/'.$GLOBALS['xoopsModule']->getVar('dirname').'/lightIRC/expressInstall.swf", params);');
 	include (XOOPS_ROOT_PATH."/footer.php");
 	break;
 default:
