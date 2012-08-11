@@ -20,8 +20,8 @@ define('_MI_USEBGIMGDESC',"(background.gif)");
 //Version 1.02
 define('_MI_WIDTH',"Applet Width");
 define('_MI_HEIGHT',"Applet Height");
-define('_MI_CSS', 'Flash CSS to Use');
-define('_MI_APPLET', 'Applet Language to Use');
-define('_MI_IRC_PREFERENCES', 'Sending you to preferences!');
-define('_MI_IRC_ADMENU1', 'Preferences');
+define('_MI_CSS','Flash CSS to Use');
+define('_MI_APPLET','Applet Language to Use');
+define('_MI_IRC_PREFERENCES','Sending you to preferences!');
+define('_MI_IRC_ADMENU1','Preferences');
 ?>
